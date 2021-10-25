@@ -4,7 +4,7 @@
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
     <meta content="text/html; charset=utf-8" http-equiv="content-type" />
     <!-- Enable responsiveness on mobile devices-->
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     {% if config.generate_feed %} <link rel="alternate" type={% if config.feed_filename=="atom.xml"
     %} "application/atom+xml" {% else %} "application/rss+xml" {% endif %} title="RSS" href="{{
     get_url(path=config.feed_filename) | safe }}" /> {% endif %}
