@@ -1,10 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>MyBlog</title>
-    <link href="{{ get_url(path="index.css", trailing_slash=false) }}"
-    rel="stylesheet"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <!-- Enable responsiveness on mobile devices-->
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport" />
+    {% if config.generate_feed %} <link rel="alternate" type={% if config.feed_filename=="atom.xml"
+    %} "application/atom+xml" {% else %} "application/rss+xml" {% endif %} title="RSS" href="{{
+    get_url(path=config.feed_filename) | safe }}" /> {% endif %}
+
+    <title>{% block title %} {{ config.title }} {% endblock title %}</title>
+
+    <link href="{{ get_url(path='index.css', trailing_slash=false) }}" rel="stylesheet" />
+    {% block metadata %}
+    <meta content="website" property="og:type" />
+    <meta content="{{ config.title }}" property="og:site_name" />
+    <meta content="{{ config.base_url | safe }}" property="og:url" />
+    <meta content="{{ config.base_url | safe }}" property="twitter:url" />
+    {% if section.title %}
+    <meta content="{{ section.title }}" property="og:title" />
+    <meta content="{{ section.title }}" property="twitter:title" />
+    {% endif %} {% if section.description %}
+    <meta content="{{ section.description }}" property="og:description" />
+    <meta content="{{ section.description }}" property="description" />
+    <meta content="{{ section.description }}" property="twitter:description" />
+    {% endif %}
+    <meta content="summary_large_image" property="twitter:card" />
+    <meta content="{{ config.base_url | safe }}/images/cover.png" property="og:image" />
+    <meta content="{{ config.base_url | safe }}/images/cover.png" property="twitter:image" />
+    {% endblock metadata %}
   </head>
 
   <body>
