@@ -1,9 +1,6 @@
 +++
 title = "The Setup"
 date = 2021-10-25
-
-[taxonomies]
-categories = ["setup"]
 +++
 
 ```java
@@ -20,7 +17,6 @@ Since this is <br> going to take long, So a request :pray: to reader , do visit 
 Would be logging the timeline of the changes in this very blog :wink:.
 
 - 25th October 2021
-
   - Set up of the blog through Zola, and made the very first blog.
   - using a primary dark theme.
   - Changed font
@@ -28,4 +24,3 @@ Would be logging the timeline of the changes in this very blog :wink:.
 - 26th october 2021
   - Added a basic 404 page
   - Made simple header and would customize it in the next few days
-  - Category Taxonomy Added with a few css tweaks
