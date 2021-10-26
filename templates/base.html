@@ -43,6 +43,17 @@
           <span></span>
         </div>
       </div>
+      <nav class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-menu-list">
+            {% for item in config.extra.blog_menu %}
+                <li class="mobile-menu-item">
+                    <a href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}">
+                        {{ item.name }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
       {% block content %} {% endblock %}
     </div>
   </body>
