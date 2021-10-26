@@ -28,3 +28,4 @@ Would be logging the timeline of the changes in this very blog :wink:.
 - 26th october 2021
   - Added a basic 404 page
   - Made simple header and would customize it in the next few days
+  - Added categories taxonomy and some minor css tweaks
