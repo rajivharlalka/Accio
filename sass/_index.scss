@@ -6,11 +6,12 @@ $blog-font: "Poppins", sans-serif;
 $link-color: #7bf02e;
 
 * {
+  background-color: $background_color;
   font-family: $blog-font;
 }
 
 body {
-  background-color: $background_color;
+  
   color: $color;
 }
 

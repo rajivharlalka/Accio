@@ -11,7 +11,7 @@
 
     <title>{% block title %} {{ config.title }} {% endblock title %}</title>
 
-    <link href="{{ get_url(path='index.css', trailing_slash=false) }}" rel="stylesheet" />
+    <link href="{{ get_url(path='site.css', trailing_slash=false) }}" rel="stylesheet" />
     {% block metadata %}
     <meta content="website" property="og:type" />
     <meta content="{{ config.title }}" property="og:site_name" />
