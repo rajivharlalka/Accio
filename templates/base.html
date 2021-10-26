@@ -11,7 +11,7 @@
 
     <title>{% block title %} {{ config.title }} {% endblock title %}</title>
 
-    <link href="{{ get_url(path='index.css', trailing_slash=false) }}" rel="stylesheet" />
+    <link href="{{ get_url(path='site.css', trailing_slash=false) }}" rel="stylesheet" />
     {% block metadata %}
     <meta content="website" property="og:type" />
     <meta content="{{ config.title }}" property="og:site_name" />
@@ -32,8 +32,29 @@
   </head>
 
   <body>
-    <section class="section">
-      <div class="container">{% block content %} {% endblock %}</div>
-    </section>
+    <div class="container">
+      <div class="mobile-navbar" id="mobile-navbar">
+        <div class="mobile-header-logo">
+          <a class="logo" href="{{ config.base_url }}">{{ config.title }}</a>
+        </div>
+        <div class="mobile-navbar-icon icon-out">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <nav class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-menu-list">
+            {% for item in config.extra.blog_menu %}
+                <li class="mobile-menu-item">
+                    <a href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}">
+                        {{ item.name }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+      {% block content %} {% endblock %}
+    </div>
   </body>
 </html>

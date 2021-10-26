@@ -1,7 +1,7 @@
 # The URL the site will be built for
 base_url = "https://rajivharlalka.github.io"
 
-title = "Blog"
+title = "🧙‍♂️"
 description = "This is my blog page"
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -19,3 +19,8 @@ highlight_theme="material-dark"
 
 [extra]
 # Put all your custom variables here
+author= "Vijard"
+blog_menu = [
+    {url = "$BASE_URL", name = "Home"},
+    {url = "$BASE_URL/categories", name = "Categories"},
+]

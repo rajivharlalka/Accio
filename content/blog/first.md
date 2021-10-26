@@ -20,3 +20,7 @@ Would be logging the timeline of the changes in this very blog :wink:.
   - Set up of the blog through Zola, and made the very first blog.
   - using a primary dark theme.
   - Changed font
+
+- 26th october 2021
+  - Added a basic 404 page
+  - Made simple header and would customize it in the next few days
