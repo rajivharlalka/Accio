@@ -7,4 +7,25 @@ body {
   color: $text-color;
   background-color: $background_color;
   font-family: $blog-font;
+  min-width: 100vw;
+}
+
+.container {
+  width: $body-width;
+  margin: 0 auto;
+}
+
+@include max-screen() {
+  body {
+    border-top: 0;
+  }
+
+  .container {
+    width: 100vw;
+  }
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
 }
