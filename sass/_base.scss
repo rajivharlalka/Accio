@@ -7,7 +7,6 @@ body {
   color: $text-color;
   background-color: $background_color;
   font-family: $blog-font;
-  min-width: 100vw;
 }
 
 .container {
@@ -21,7 +20,7 @@ body {
   }
 
   .container {
-    width: 100vw;
+    width: 100%;
   }
 }
 
