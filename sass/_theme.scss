@@ -8,3 +8,12 @@ $link-color: #7bf02e;
 
 //fonts
 $blog-font: 'Poppins', sans-serif;
+
+//sizes
+$body-width: 800px;
+
+@mixin max-screen($max-width: $body-width) {
+  @media screen and (max-width: $max-width) {
+    @content;
+  }
+}
