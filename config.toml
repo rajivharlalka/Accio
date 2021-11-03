@@ -25,8 +25,7 @@ highlight_theme="material-dark"
 # Put all your custom variables here
 author= "Vijard"
 blog_menu = [
-
     {url = "$BASE_URL", name = "Home"},
     {url = "$BASE_URL/blog", name = "Posts"},
-    {url = "$BASE_URL/categories", name = "Categories"},
+    {url = "$BASE_URL/categories", name = "Categories"}
 ]
