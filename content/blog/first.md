@@ -32,3 +32,6 @@ Would be logging the timeline of the changes in this very blog :wink:.
 
 - 27th October 2021
   - Adjusted max screen width on large screens and some minor css tweaks :smile:
+
+- 1st November 2021
+  - Added Mobile navbar,some changes remain , added Resume
