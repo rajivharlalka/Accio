@@ -2,8 +2,6 @@
   position: relative;
   margin: 35px auto 0;
   width: 300px;
-  height: 534px;
-  overflow: hidden;
 }
 
 #toggle {
@@ -121,7 +119,6 @@
 // Showing nav items as lines, making up the hamburger menu icon
 .nav-item {
   position: relative;
-  display: inline-block;
   float: left;
   clear: both;
   color: transparent;
@@ -175,4 +172,3 @@
     transition: $transition-duration;
   }
 }
-
