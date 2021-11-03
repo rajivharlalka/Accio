@@ -39,16 +39,6 @@
       <label class="toggle-container" for="toggle">
         <span class="button button-toggle"></span>
       </label>
-      <!-- <div class="mobile-navbar" id="mobile-navbar">
-        <div class="mobile-header-logo">
-          <a class="logo" href="{{ config.base_url }}">{{ config.title }}</a>
-        </div>
-        <div class="mobile-navbar-icon icon-out">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div> -->
       <nav class="nav">
           {% for item in config.extra.blog_menu %}
             <a class="nav-item" href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}">

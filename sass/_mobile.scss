@@ -121,7 +121,6 @@
 // Showing nav items as lines, making up the hamburger menu icon
 .nav-item {
   position: relative;
-  display: inline-block;
   float: left;
   clear: both;
   color: transparent;
@@ -175,4 +174,3 @@
     transition: $transition-duration;
   }
 }
-
