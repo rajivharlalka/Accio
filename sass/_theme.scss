@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
 //colors
-$background_color: #1a202c;
-$text-color: #fcfcfc;
-$link-color: #7bf02e;
+$background_color: #050f1f;
+$secondary_color: #8892b0;
+$text-color: #eef3ea;
+$link-color: #64ffda;
 
 //fonts
 $blog-font: 'Poppins', sans-serif;
@@ -15,6 +16,12 @@ $transition-delay: 0.05s;
 
 //sizes
 $body-width: 800px;
+
+@mixin sm {
+  @media (max-width: #{$body-width}) {
+    @content;
+  }
+}
 
 @mixin max-screen($max-width: $body-width) {
   @media screen and (max-width: $max-width) {
