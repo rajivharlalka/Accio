@@ -1,5 +1,5 @@
-# Personal Blog Page
+# Personal Blog Site Theme+Content
 
-rajivharlalka.github.io  .
+rajivharlalka.github.io .
 
 Personal Blog Bage using Zola SSG and a personal theme(WIP).
