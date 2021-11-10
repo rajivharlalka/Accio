@@ -1,3 +1,27 @@
 footer {
-  color: $link-color;
+  color: $secondary_color;
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem 0;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+
+  .social {
+    a {
+      margin-right: 1rem;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+  .footer_info {
+    display: flex;
+    justify-content: space-between;
+
+    flex-direction: column;
+  }
+  @include sm {
+    flex-direction: column;
+  }
 }
