@@ -26,12 +26,18 @@ Would be logging the timeline of the changes in this very blog :wink:.
   - Changed font
 
 - 26th october 2021
+
   - Added a basic 404 page
   - Made simple header and would customize it in the next few days
   - Added categories taxonomy and some minor css tweaks
 
 - 27th October 2021
+
   - Adjusted max screen width on large screens and some minor css tweaks :smile:
 
 - 1st November 2021
+
   - Added Mobile navbar,some changes remain , added Resume
+
+- 10th November 2021
+  - Added About Me section and somewhat made a footer whose css needs updates
