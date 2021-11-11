@@ -36,22 +36,28 @@
 
   <body>
     <div class="container">
-      <input id="toggle" type="checkbox">
-      <label class="toggle-container" for="toggle">
-        <span class="button button-toggle"></span>
-      </label>
-      <nav class="nav">
-          {% for item in config.extra.blog_menu %}
-            <a class="nav-item" href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}">
-              {{ item.name }}
-            </a>
-          
-          {% endfor %}
-         <a class="nav-item" href="./Resume.pdf">Resume</a>
-       
-      </nav>
-      {% block content %} {% endblock %}
-      {{page_macros::footer()}}
+      <div class="header-wrapper">
+        <input id="toggle" type="checkbox">
+        <label class="toggle-container" for="toggle">
+          <span class="button button-toggle"></span>
+        </label>
+        <nav class="nav">
+            {% for item in config.extra.blog_menu %}
+              <a class="nav-item" href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}">
+                {{ item.name }}
+              </a>
+            
+            {% endfor %}
+          <a class="nav-item" href="./Resume.pdf">Resume</a>
+        
+        </nav>
+      </div>
+      <div class="main">
+        {% block content %} {% endblock %}
+      </div>
+      <div class="footer-wrapper">
+        {{page_macros::footer()}}
+      </div>
     </div>
   </body>
 
