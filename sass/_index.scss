@@ -2,13 +2,19 @@ footer {
   color: $secondary_color;
   display: flex;
   justify-content: space-between;
-  margin: 5rem 0;
+  align-items: center;
+  margin: 1rem 0;
   font-size: 1.1rem;
   line-height: 1.5rem;
 
   .social {
+
+    display: flex;
+    align-items: center;
     a {
       margin-right: 1rem;
+      display: flex;
+      align-items: center;
     }
   }
 
@@ -19,7 +25,6 @@ footer {
     display: flex;
     justify-content: space-between;
 
-    flex-direction: column;
   }
   @include sm {
     flex-direction: column;
