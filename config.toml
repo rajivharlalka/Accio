@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://rajivharlalka.github.io/Accio"
+base_url = "https://accio-demo.netlify.app/"
 
 title = "🧙‍♂️ Vijard"
 description = "Welcome to my world of leisure"
