@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://accio-demo.netlify.app/"
+base_url = "https://accio-demo.netlify.app"
 
 title = "Accio"
 description = "Spell Bound theme for Zola SSG"
@@ -27,5 +27,6 @@ blog_menu = [
     {url = "$BASE_URL", name = "Home"},
     {url = "$BASE_URL/blog", name = "Posts"},
     {url = "$BASE_URL/about", name = "About Me"},
-    {url = "$BASE_URL/categories", name = "Categories"}
+    {url = "$BASE_URL/categories", name = "Categories"},
+    {url = "$BASE_URL/Resume.pdf", name = "Resume"}
 ]
