@@ -12,7 +12,6 @@ generate_feed=true
 
 taxonomies = [
     {name = "categories", rss = true},
-    
 ]
 [markdown]
 # Whether to do syntax highlighting
