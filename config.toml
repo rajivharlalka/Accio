@@ -2,7 +2,7 @@
 base_url = "https://accio-demo.netlify.app"
 
 title = "Accio"
-description = "Spell Bound theme for Zola SSG"
+description = "A Spell Bound theme for Zola SSG"
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
