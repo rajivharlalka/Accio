@@ -1,4 +1,6 @@
 {% extends "base.html" %} {% block content %}
-<h1 class="title">Hi, I am {{config.extra.author}}</h1>
-<p>{{config.description}}</p>
+<div class="index-heading">
+    <h1 class="index-title">Hi, I am {{config.extra.author}}</h1>
+    <p class="index-subtitle">{{config.description}}</p>
+</div>
 {% endblock content %}
