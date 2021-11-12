@@ -1,8 +1,8 @@
 # The URL the site will be built for
-base_url = "https://accio-demo.netlify.app/"
+base_url = "https://accio-demo.netlify.app"
 
-title = "🧙‍♂️ Vijard"
-description = "Welcome to my world of leisure"
+title = "Accio"
+description = "Spell Bound theme for Zola SSG"
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
@@ -12,7 +12,6 @@ generate_feed=true
 
 taxonomies = [
     {name = "categories", rss = true},
-    
 ]
 [markdown]
 # Whether to do syntax highlighting
@@ -26,7 +25,8 @@ highlight_theme="material-dark"
 author= "Vijard"
 blog_menu = [
     {url = "$BASE_URL", name = "Home"},
-    {url = "$BASE_URL/about", name = "About Me"},
     {url = "$BASE_URL/blog", name = "Posts"},
-    {url = "$BASE_URL/categories", name = "Categories"}
+    {url = "$BASE_URL/about", name = "About Me"},
+    {url = "$BASE_URL/categories", name = "Categories"},
+    {url = "$BASE_URL/Resume.pdf", name = "Resume"}
 ]

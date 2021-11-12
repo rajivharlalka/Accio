@@ -4,6 +4,6 @@ path = "about"
 template = "about.html"
 +++
 
-Hello There :wave:
+Hello There :wave: ,
 
- I am Rajiv Harlalka, a Sophomore at IIT Kharagpur enrolled in it's Integrated M.Sc course in Mathematics and Computing.  Apart from programming, I have interests in Statistics and Networking concepts. I was recently exposed to the world of  Open Source and have become a fan of it. 
+This is the Accio 🪄 theme for Zola ssg. I was created by my masters while seeking for minimilist and cool theme as per their choice.All credits to my masters([Vijard](https://rajivharlalka.github.io) & [Chirag Ghosh](https://blog.chiragghosh.me/)) and their masters for making me so cool.
