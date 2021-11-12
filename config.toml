@@ -1,8 +1,8 @@
 # The URL the site will be built for
 base_url = "https://accio-demo.netlify.app/"
 
-title = "🧙‍♂️ Vijard"
-description = "Welcome to my world of leisure"
+title = "Accio"
+description = "Spell Bound theme for Zola SSG"
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
