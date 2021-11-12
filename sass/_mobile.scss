@@ -67,7 +67,7 @@
 
 .button-toggle {
   position: absolute;
-  display: inline-block;
+  display: none;
   width: 20px;
   height: 20px;
   margin: 25px;
@@ -76,6 +76,10 @@
   cursor: pointer;
   border-radius: 100%;
   transition: $transition-duration + 0.1;
+
+  @include sm {
+    display: inline-block;
+  }
 
   // Shadow on Hover
   &:hover {
@@ -110,10 +114,14 @@
 /* Menu */
 
 .nav {
-  display: inline-block;
+  display: none;
   margin: 25px 25px 20px;
   pointer-events: none;
   transition: $transition-duration;
+
+  @include sm {
+    display: inline-block;
+  }
 }
 
 // Showing nav items as lines, making up the hamburger menu icon

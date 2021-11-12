@@ -30,3 +30,27 @@ footer {
     flex-direction: column;
   }
 }
+
+.nav-desktop {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 5rem;
+  font-size: 1.2rem;
+
+  @include sm {
+    display: none;
+  }
+}
+
+.nav-item-desktop {
+
+  transition: all .3s;
+  border-radius: 50%;
+  letter-spacing: 1px;
+
+  &:hover {
+    color: #17D7A0;
+  }
+}

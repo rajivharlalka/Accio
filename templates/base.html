@@ -51,6 +51,16 @@
           <a class="nav-item" href="{{ get_url(path="Resume.pdf", trailing_slash=false) }}">Resume</a>
         
         </nav>
+        <nav class="nav-desktop">
+          {% for item in config.extra.blog_menu %}
+              <a class="nav-item-desktop" href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}">
+                {{ item.name }}
+              </a>
+            
+            {% endfor %}
+          <a class="nav-item-desktop" href="{{ get_url(path="Resume.pdf", trailing_slash=false) }}">Resume</a>
+
+        </nav>
       </div>
       <div class="main">
         {% block content %} {% endblock %}
