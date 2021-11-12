@@ -25,6 +25,14 @@ footer {
     display: flex;
     justify-content: space-between;
 
+    a {
+
+      transition: all .4s;
+      &:hover {
+        color: $link-highlighted-color;
+      }
+    }
+
   }
   @include sm {
     flex-direction: column;
@@ -51,7 +59,7 @@ footer {
   letter-spacing: 1px;
 
   &:hover {
-    color: #17D7A0;
+    color: $link-highlighted-color;
   }
 }
 
