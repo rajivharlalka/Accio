@@ -1,4 +1,4 @@
 +++
-title = "Vijard"
-description = "Personal Blog Page"
+title = "Accio"
+description = "Zola Blog Page Theme"
 +++
