@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.md": [
+      "prettier --parser markdown --write"
+    ],
+    "*.scss": [
+      "prettier --parser scss --write"
+    ]
+  },
+  "dependencies": {
+    "husky": "^7.0.4",
+    "lint-staged": "^11.2.6",
+    "prettier": "^2.4.1"
+  }
+}
