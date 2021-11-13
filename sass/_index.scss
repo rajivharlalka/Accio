@@ -64,4 +64,14 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  .index-title {
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+    color: $link-color;
+  }
+
+  .index-subtitle {
+    font-size: 1.2rem;
+  }
 }
