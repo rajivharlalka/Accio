@@ -8,7 +8,6 @@ footer {
   line-height: 1.5rem;
 
   .social {
-
     display: flex;
     align-items: center;
     a {
@@ -26,13 +25,11 @@ footer {
     justify-content: space-between;
 
     a {
-
-      transition: all .4s;
+      transition: all 0.4s;
       &:hover {
         color: $link-highlighted-color;
       }
     }
-
   }
   @include sm {
     flex-direction: column;
@@ -40,7 +37,6 @@ footer {
 }
 
 .nav-desktop {
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -53,8 +49,7 @@ footer {
 }
 
 .nav-item-desktop {
-
-  transition: all .3s;
+  transition: all 0.3s;
   border-radius: 50%;
   letter-spacing: 1px;
 
@@ -64,7 +59,6 @@ footer {
 }
 
 .index-heading {
-
   width: 100%;
   display: flex;
   flex-direction: column;
