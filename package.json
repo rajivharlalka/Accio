@@ -4,12 +4,10 @@
   },
   "lint-staged": {
     "*.md": [
-      "prettier --parser markdown --write",
-      "git add"
+      "prettier --parser markdown --write"
     ],
     "*.scss": [
-      "prettier --parser scss --write",
-      "git add"
+      "prettier --parser scss --write"
     ]
   },
   "dependencies": {
