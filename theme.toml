@@ -15,12 +15,11 @@ demo = ""
 
 # The theme author info: you!
 [author]
-name = "Rajiv"
+name = "Rajiv and Chirag"
 homepage = ""
 
 # If this is porting a theme from another static site engine, provide
 # the info of the original author here
 [original]
-author =  ""
-homepage = ""
-repo = ""
+homepage = "https://accio-theme.netlify.app"
+repo = "https://www.github.com/rajivharlalka/accio"
