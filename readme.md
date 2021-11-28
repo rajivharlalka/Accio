@@ -1,4 +1,5 @@
 # <div align="center">Personal Blog Site Theme</div>
+
 <br/>
 
 Accio is a Personal Blog Page using Zola Static Site Generator and a personal theme.
@@ -35,3 +36,18 @@ Note : Always ask help in discord server whenever you are stuck somewhere. We wi
 6. Run the command `yarn` in terminal. This will install the required packages for automatic linting.
 7. Run the command `zola serve` in terminal to see the live changes in the browser.
 8. Now you are good to go. Start coding!
+
+<br/><br/>
+
+### <div align="center" id="setup">References</div>
+
+<br/>
+- <a href="https://www.cloudflare.com/en-in/learning/performance/static-site-generator/">What is a Static Site Generator (SSG) ?</a>
+<br/>
+- <a href="https://www.getzola.org/">What is Zola ?</a>
+<br/>
+- We are using Tera template. <a href="https://tera.netlify.app/docs/#templates">Read how to add/change.</a>
+<br/>
+- <a href="https://sass-lang.com/documentation">How to use SASS ?</a>
+<br/>
+- Some good ZOLA themes for reference. <a href="https://github.com/xypnox/blag">Blag</a> <a href="https://github.com/getzola/after-dark">AfterDark</a>
