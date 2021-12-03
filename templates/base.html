@@ -42,22 +42,32 @@
           <span class="button button-toggle"></span>
         </label>
         <nav class="nav">
-            {% for item in config.extra.blog_menu %}
-              <a class="nav-item" href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}">
-                {{ item.name }}
-              </a>
-            
-            {% endfor %}
+          {% for item in config.extra.blog_menu %}
+           {% if item.name == "Resume"%}
+            <a class="nav-item-desktop" href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}" target="_blank" rel="noopener">
+              {{ item.name }}
+            </a>
+           {% else%}  
+            <a class="nav-item-desktop" href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}" >
+              {{ item.name }}
+            </a>
+           {%endif%}
+          {% endfor %}
             
         
         </nav>
         <nav class="nav-desktop">
           {% for item in config.extra.blog_menu %}
-              <a class="nav-item-desktop" href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}">
+            {% if item.name == "Resume"%}
+              <a class="nav-item-desktop" href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}"  target="_blank" rel="noopener" >
                 {{ item.name }}
               </a>
-            
-            {% endfor %}
+            {% else%}  
+            <a class="nav-item-desktop" href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}" >
+              {{ item.name }}
+            </a>
+            {%endif%}
+          {% endfor %}
           
               
         </nav>
