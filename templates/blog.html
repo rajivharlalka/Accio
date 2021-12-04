@@ -4,9 +4,12 @@
   <ul>
     {% for page in section.pages %}
     <li>
-      <a class="page-title" href="{{ page.permalink | safe }}">{{ page.title }}</a>
-      <p class="page-desc">{{page.description}}</p>
-      <p class="page-date">{{page.date}}</p>
+      <a class="heading" href="{{ page.permalink | safe }}">
+        <i class="fas fa-chevron-right"> </i>
+        {{ page.title }}
+      </a>
+      <p class="page desc">{{page.description}}</p>
+      <p class="page date">{{page.date}}</p>
     </li>
     {% endfor %}
   </ul>
