@@ -36,3 +36,17 @@ a {
   color: $link-color;
   text-decoration: none;
 }
+
+.count{
+  position: relative;
+  top: -7px;
+  right: 2px;
+  color: $text-color;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.taxonomies__items {
+  padding-top: 11px;
+}
