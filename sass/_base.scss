@@ -21,7 +21,43 @@ body {
 .main {
   margin: 0 1rem;
 }
-
+.blog-list {
+  .title {
+    display: grid;
+    place-items: center;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-size: 3rem;
+    margin-bottom: 2em;
+  }
+  li {
+    list-style: none;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    margin-bottom: 1.5em;
+  }
+  .page {
+    padding-left: 1.5em;
+  }
+  .heading {
+    display: flex;
+    align-items: center;
+    line-height: 1.3em;
+  }
+  i {
+    padding-right: 0.5em;
+    font-size: 1.4rem;
+    color: $text-color;
+  }
+  .desc {
+    font-size: 1.2rem;
+  }
+  .date {
+    padding-left: 2em;
+    font-size: 1rem;
+    opacity: 0.5;
+  }
+}
 @include max-screen() {
   body {
     border-top: 0;
