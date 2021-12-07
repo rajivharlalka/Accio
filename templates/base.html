@@ -44,11 +44,11 @@
         <nav class="nav">
           {% for item in config.extra.blog_menu %}
            {% if item.name == "Resume"%}
-            <a class="nav-item-desktop" href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}" target="_blank" rel="noopener">
+            <a class="nav-item" href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}" target="_blank" rel="noopener">
               {{ item.name }}
             </a>
            {% else%}  
-            <a class="nav-item-desktop" href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}" >
+            <a class="nav-item" href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}" >
               {{ item.name }}
             </a>
            {%endif%}
