@@ -73,16 +73,32 @@ a {
   text-decoration: none;
 }
 
-.count{
-  position: relative;
-  top: -7px;
-  right: 2px;
-  color: $text-color;
-  font-size: 15px;
-  font-weight: 600;
+.taxonomies{
   text-align: center;
+  margin-bottom: 150px;
 }
 
+
+.taxonomies__title {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 0.5em;
+}
+
+.count{
+  color: $text-color;
+  font-weight: 700;
+}
 .taxonomies__items {
   padding-top: 11px;
+}
+
+.taxonomies_item{
+  background: rgba(230, 238, 236, 0.03);
+  border-radius: 5px;
+  // margin: 0 10px;
+  display: inline-block;
+  min-width: 100px;
+  margin: 1rem 1rem 0 0;
+  padding: 0.8rem 1.2rem;
 }
