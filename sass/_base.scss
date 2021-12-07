@@ -88,6 +88,7 @@ a {
 .count{
   color: $text-color;
   font-weight: 700;
+  font-size: 1.2rem;
 }
 .taxonomies__items {
   padding-top: 11px;
@@ -101,4 +102,6 @@ a {
   min-width: 100px;
   margin: 1rem 1rem 0 0;
   padding: 0.8rem 1.2rem;
+  font-size: 1.1rem;
+  word-spacing: 3px;
 }
