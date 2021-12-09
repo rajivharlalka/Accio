@@ -80,11 +80,11 @@ Currently this project is actively in development mode.
 <a href="https://github.com/Rayman-Sodhi/Clone-IT"><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"></a>
 
 <div align="center">
-<img src="https://media-exp1.licdn.com/dms/image/C4E0BAQFA3tnp1EH-dQ/company-logo_200_200/0/1602335093424?e=1646870400&v=beta&t=8lv-Eubg3_uPkv8a60ut86M1QRbbtMLRdTrdVuTmwHQ" width="150px">
+<img src="https://media-exp1.licdn.com/dms/image/C560BAQGNflW7cZMukg/company-logo_200_200/0/1589034084843?e=1646870400&v=beta&t=mKip_R8iZ5ph54NuyudJ2dmcdp9hSuespgF4exp1ZQ0" width="150px">
 </div>
 
 <div align="center">
-    <a href="https://kwoc.kossiitkgp.org/">Kharagpur Open Source Society</a>
+    <a href="https://kwoc.kossiitkgp.org/">Kharagpur Winter of Code</a>
 
 </div>
 
