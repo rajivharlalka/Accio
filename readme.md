@@ -97,7 +97,14 @@ Currently this project is actively in development mode.
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
 ## Contribution Guidelines
-<a href="https://github.com/Dezenix/frontend-reactjs"><img src="https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=red"></a>
+<a href="#"><img src="https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=red"></a>  &nbsp; 
+<a href="https://discord.com/invite/6pGdW2rg">
+<img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white"  width="85" > </a>  &nbsp; 
+ <br/>
+
+```
+Note : Always ask help in discord server whenever you are stuck somewhere. We will fix it together.
+```         
 
 <br>
 
