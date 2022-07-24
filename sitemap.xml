@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://accio-demo.netlify.app/</loc>
+    </url>
+    <url>
+        <loc>https://accio-demo.netlify.app/about/</loc>
+    </url>
+    <url>
+        <loc>https://accio-demo.netlify.app/blog/</loc>
+    </url>
+    <url>
+        <loc>https://accio-demo.netlify.app/blog/markdown-syntax/</loc>
+        <lastmod>2021-10-25</lastmod>
+    </url>
+    <url>
+        <loc>https://accio-demo.netlify.app/blog/placeholder-text/</loc>
+        <lastmod>2021-05-03</lastmod>
+    </url>
+    <url>
+        <loc>https://accio-demo.netlify.app/categories/</loc>
+    </url>
+    <url>
+        <loc>https://accio-demo.netlify.app/categories/markdown/</loc>
+    </url>
+    <url>
+        <loc>https://accio-demo.netlify.app/categories/sample/</loc>
+    </url>
+</urlset>
