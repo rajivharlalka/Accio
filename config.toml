@@ -38,5 +38,5 @@ blog_menu = [
     {url = "$BASE_URL/blog", name = "Posts"},
     {url = "$BASE_URL/about", name = "About Me"},
     {url = "$BASE_URL/categories", name = "Categories"},
-    {url = "$BASE_URL/Resume.pdf", name = "Resume"}
+    {url = "$BASE_URL/Resume.pdf", name = "Resume"},
 ]

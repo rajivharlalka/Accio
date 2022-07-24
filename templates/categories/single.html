@@ -4,10 +4,10 @@
   <h1>{{ term.name }}</h1>
   {% for page in term.pages %}
   <div class="taxonomy__item">
-    <div class="taxonomy__item__title">
+    <h1 class="taxonomy__item__title">
       <a href="{{ page.permalink }}">{{ page.title }}</a>
-    </div>
-    <div class="taxonomy__item__time">{{ page.date | date(format="%F") }}</div>
+    </h1>
+    <p class="taxonomy__item__time">{{ page.date | date(format="%F") }}</p>
   </div>
   {% endfor %}
 </div>
