@@ -154,3 +154,14 @@ a {
   font-size: 1.1rem;
   word-spacing: 3px;
 }
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  .error-heading{
+    font-size: 2rem;
+  }
+}
