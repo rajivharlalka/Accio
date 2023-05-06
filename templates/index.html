@@ -1,6 +1,19 @@
 {% extends "base.html" %} {% block content %}
-<div class="index-heading">
-  <h1 class="index-title">Hi, I am {{config.title}}</h1>
-  <p class="index-subtitle">{{config.description}}</p>
+<div class="blog-list">
+
+  <h1 class="title">{{ section.title }}</h1>
+  {# enlist all blogs on home screen #}
+  <ul>
+    {% for page in section.pages %}
+    <li>
+      <a class="heading" href="{{ page.permalink | safe }}">
+        <i class="fas fa-chevron-right"> </i>
+        {{ page.title }}
+      </a>
+      <p class="page desc">{{page.description}}</p>
+      <p class="page date">{{page.date}}</p>
+    </li>
+    {% endfor %}
+  </ul>
 </div>
 {% endblock content %}
