@@ -7,12 +7,14 @@ description = "A Spell Bound theme for Zola SSG"
 compile_sass = true
 
 # Whether to build a search index to be used later on by a JavaScript library
-build_search_index = false
+build_search_index = true
 generate_feed=true
 
 taxonomies = [
     {name = "categories", rss = true},
 ]
+
+
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
@@ -40,3 +42,5 @@ blog_menu = [
     {url = "$BASE_URL/categories", name = "Categories"},
     {url = "$BASE_URL/Resume.pdf", name = "Resume"},
 ]
+github = "https://github.com/rajivharlalka"
+twitter = "https://twitter.com/rajivharlalka09"
