@@ -1,5 +1,4 @@
 html {
-  font-size: 16px;
   box-sizing: border-box;
 }
 
@@ -7,19 +6,16 @@ body {
   color: $text-color;
   background-color: $background_color;
   font-family: $blog-font;
+  
 }
 
 .container {
   width: $body-width;
-  margin: 0 auto;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.main {
-  margin: 0 1rem;
+  margin: 0 auto;
 }
 
 .about {
@@ -40,29 +36,32 @@ body {
 }
 
 .blog-list {
+  font-size: 1.15rem;
+  line-height: 1.5rem;
   li {
     list-style: none;
+    padding: 0;
+  }
+  ul {
+    padding: 0;
   }
   .title {
-    flex: 6;
+    flex: 5;
   }
   .heading {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    font-size: 1.1rem;
-    font-weight: 100;
-    opacity: 0.9;
+    justify-content: space-evenly;
+    font-weight: 400;
   }
   .date {
-    font-weight: 100;
     opacity: 0.9;
     color: $secondary-color;
-    flex: 2;
+    flex: 2.5;
     text-align: center;
   }
   .wc {
-    flex: 2;
+    flex: 2.5;
     color: $low-opacity-color;
     opacity: 0.6;
   }
@@ -92,7 +91,7 @@ body {
 }
 
 a {
-  // color: $link-color;
+  color: $text-color;
   text-decoration: none;
 }
 
@@ -240,6 +239,6 @@ a {
     background-color: rgb(230, 230, 104); /* set the background color to your preference */
     padding: 0.2rem; /* adjust the padding to your preference */
     font-weight: bold; /* adjust the font weight to your preference */
-    border-radius: 0.2rem;;
+    border-radius: 0.2rem;
   }
 }
