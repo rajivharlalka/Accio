@@ -37,64 +37,35 @@ body {
     padding: 1em 2em;
     border-radius: 1em;
   }
-  .emoji {
-    font-size: 1em;
-    position: absolute;
-    left: 7.5em;
-    top: 1.9em;
-    transform-origin: 60% 60%;
-    animation: wave 2s ease-in-out infinite;
-  }
-}
-@keyframes wave {
-  0% {
-    transform: rotate(20deg);
-  }
-  50% {
-    transform: rotate(50deg);
-  }
-  100% {
-    transform: rotate(20deg);
-  }
 }
 
 .blog-list {
-  .title {
-    display: grid;
-    place-items: center;
-    letter-spacing: 2px;
-    font-weight: bolder;
-    font-size: 3rem;
-    margin-bottom: 2em;
-  }
   li {
     list-style: none;
-    letter-spacing: 1px;
-    font-size: 2rem;
-    margin-bottom: 1.5em;
   }
-  .page {
-    padding-left: 1.5em;
+  .title {
+    flex: 6;
   }
   .heading {
     display: flex;
     align-items: center;
-    line-height: 1.3em;
-  }
-  i {
-    padding-right: 0.5em;
-    font-size: 1.4rem;
-    color: $text-color;
-  }
-  .desc {
-    font-size: 1.2rem;
+    justify-content: space-around;
+    font-size: 1.1rem;
+    font-weight: 100;
   }
   .date {
-    padding-left: 2em;
-    font-size: 1rem;
+    opacity: 0.9;
+    color: $secondary-color;
+    flex: 2;
+    text-align: center;
+  }
+  .wc {
+    flex: 2;
+    color: $low-opacity-color;
     opacity: 0.5;
   }
 }
+
 @include max-screen() {
   body {
     border-top: 0;
