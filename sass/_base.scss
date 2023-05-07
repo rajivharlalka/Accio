@@ -52,8 +52,10 @@ body {
     justify-content: space-around;
     font-size: 1.1rem;
     font-weight: 100;
+    opacity: 0.9;
   }
   .date {
+    font-weight: 100;
     opacity: 0.9;
     color: $secondary-color;
     flex: 2;
@@ -62,7 +64,7 @@ body {
   .wc {
     flex: 2;
     color: $low-opacity-color;
-    opacity: 0.5;
+    opacity: 0.6;
   }
 }
 
