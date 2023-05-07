@@ -169,7 +169,9 @@ a {
 
   pre > code {
     display: block;
+    overflow: auto;
     // border: none;
+    padding: 0.25rem;
     font-size: 1rem;
     background: none;
     color: $text-color;
@@ -177,6 +179,7 @@ a {
 
   code,
   kbd {
+    font-family: $monospace-font;
     // font-size: 1.15rem;
     border-radius: 0.5rem;
     color: $highlight-color;
@@ -189,15 +192,11 @@ a {
       font-size: 3rem;
       color: $highlight-color;
       content: '"';
-      // line-height: 0.6em;
-      // margin-right: 0.1em;
-      // margin-bottom: -0.5em;
+      margin-right: 0.2em;
       float: left;
     }
     margin: 1rem 0;
     padding: 1rem 1rem;
-    // position: relative;
-    // color: var(--quote-color);
     font-size: 1rem;
     background-color: $background_color_secondary;
     border-radius: 1rem;
@@ -227,10 +226,11 @@ a {
     }
 
     /* Hover effect for the table rows */
-    tbody:hover {
+    tr:hover :not(th) {
       background-color: $background_color_secondary;
     }
   }
+
   abbr {
     text-decoration: double underline;
     cursor: help;
