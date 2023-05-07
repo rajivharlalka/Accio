@@ -1,21 +1,16 @@
 //fonts
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 //icons
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 
 //colors
-$background_color: #181c22;
+$background_color: #15181d;
 $background_color_secondary: #21252b;
-$secondary_color: #c69749;
-$text-color: #eeeeee;
+$secondary_color: #e4a33a;
 $blog-color: #c9cde6;
-$highlight-color: #f88706;
-$low-opacity-color: #ffffff;
+$highlight-color: #f09023;
 
 //fonts
 $blog-font: 'Mulish', sans-serif;
@@ -29,6 +24,12 @@ $transition-delay: 0.05s;
 //sizes
 $body-width: 800px;
 
+@mixin sm {
+  @media (max-width: #{$body-width}) {
+    @content;
+  }
+}
+    
 @mixin for-phone-only {
   @media (max-width: 599px) {
     @content;
