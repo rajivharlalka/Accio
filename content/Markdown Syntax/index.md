@@ -14,7 +14,7 @@ in a Zola theme .
 
 ## Headings
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section
+The following HTML `<h1>--<h6>` elements represent six levels of section
 headings. `<h1>` is the highest section level while `<h6>` is the lowest.
 
 # H1
@@ -99,6 +99,7 @@ out-of-the-box.
 
 #### Code block indented with four spaces
 
+```html
     <!doctype html>
     <html lang="en">
     <head>
@@ -109,6 +110,7 @@ out-of-the-box.
       <p>Test</p>
     </body>
     </html>
+```
 
 ## List Types
 

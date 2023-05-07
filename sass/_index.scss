@@ -27,7 +27,7 @@ footer {
     a {
       transition: all 0.4s;
       &:hover {
-        color: $link-highlighted-color;
+        // color: $link-highlighted-color;
       }
     }
   }
@@ -54,7 +54,7 @@ footer {
   letter-spacing: 1px;
 
   &:hover {
-    color: $link-highlighted-color;
+    // color: $link-highlighted-color;
   }
 }
 
@@ -68,7 +68,7 @@ footer {
   .index-title {
     font-size: 2.8rem;
     letter-spacing: 2px;
-    color: $link-color;
+    // color: $link-color;
   }
 
   .index-subtitle {

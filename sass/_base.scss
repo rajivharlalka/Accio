@@ -92,7 +92,7 @@ body {
 }
 
 a {
-  color: $link-color;
+  // color: $link-color;
   text-decoration: none;
 }
 
@@ -139,97 +139,107 @@ a {
   }
 }
 
-.content {
-  margin: 2rem 0;
-  line-height: 1.5em;
-  letter-spacing: 1px;
-  div {
-    width: 100%;
-    height: 100%;
-  }
+.blog-page {
+  line-height: 1.75rem;
+  font-weight: 400;
+  font-size: 1.15rem;
+  color: $blog-color;
 
   & h1,
   h2,
-  h3 {
-    margin: 1em 0em;
-    text-align: left;
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1.2rem;
+    font-weight: 800;
+    color: $secondary-color;
   }
-  & p {
-    margin-bottom: 1em;
-    line-height: 1.8;
-    letter-spacing: 2.5px;
-    opacity: 0.8;
-  }
+
   pre {
     display: block;
     border-radius: 12px;
     padding: 1rem;
   }
-  pre,
-  code {
-    font-size: 95%;
+
+  pre {
     overflow: auto;
     // font-family: $code-font-family;
-    margin-bottom: 0;
-    // color: var(--code-block-color);
   }
 
   pre > code {
     display: block;
-    border: none;
-    font-style: normal;
+    // border: none;
     font-size: 1rem;
     background: none;
+    color: $text-color;
   }
 
-  code {
-    font-size: 1.15rem;
-    padding: 3px 5px;
-    margin: 0 4px;
-    border-radius: 6px;
-    // color: var(--code-color);
-    // background-color: var(--code-back-color);
+  code,
+  kbd {
+    // font-size: 1.15rem;
+    border-radius: 0.5rem;
+    color: $highlight-color;
+    padding: 0.25rem 0.25rem;
+    background-color: $background_color_secondary;
   }
 
   blockquote {
     &:before {
-      color: var(--light-accent-color);
+      font-size: 3rem;
+      color: $highlight-color;
       content: '"';
-      font-size: 3em;
-      line-height: 0.6em;
-      margin-right: 0.1em;
-      margin-bottom: -0.5em;
+      // line-height: 0.6em;
+      // margin-right: 0.1em;
+      // margin-bottom: -0.5em;
       float: left;
     }
-    margin: 1.5em 0;
-    padding: 10px 20px;
-    position: relative;
-    color: var(--quote-color);
+    margin: 1rem 0;
+    padding: 1rem 1rem;
+    // position: relative;
+    // color: var(--quote-color);
     font-size: 1rem;
+    background-color: $background_color_secondary;
+    border-radius: 1rem;
 
     p {
       margin: 0;
     }
   }
 
-  // table {
-  //   width: 100%;
-  //   max-width: 100%;
-  //   margin: 10px 0;
-  //   border-spacing: 0;
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    // background-color: $background_color_secondary;
+    border: 1px solid $text-color;
 
-  //   thead {
-  //     background: var(--light-accent-color);
-  //   }
+    th {
+      font-weight: bold;
+      border: 1px solid $text-color;
+      padding: 0.6rem;
+    }
 
-  //   th,
-  //   td {
-  //     padding: 5px 15px;
-  //     border: 1px double var(--secondary-color);
-  //   }
+    /* Style for the table cells */
+    td {
+      border: 1px solid $text-color;
+      padding: 0.6rem;
+    }
 
-  //   tr:hover {
-  //     background-color: var(--secondary-color);
-  //   }
-  // }
+    /* Hover effect for the table rows */
+    tbody:hover {
+      background-color: $background_color_secondary;
+    }
+  }
+  abbr {
+    text-decoration: double underline;
+    cursor: help;
+  }
+
+  mark {
+    background-color: rgb(230, 230, 104); /* set the background color to your preference */
+    padding: 0.2rem; /* adjust the padding to your preference */
+    font-weight: bold; /* adjust the font weight to your preference */
+    border-radius: 0.2rem;;
+  }
 }
