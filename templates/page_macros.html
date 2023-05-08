@@ -2,9 +2,28 @@
 <footer>
   <div>
     <script>
-      document.write(new Date().getFullYear());
+      document.write(new Date().getFullYear())
     </script>
-    {# <script src="/footer.js"></script> #}
+    {#
+    <script src="/footer.js"></script>
+    #}
   </div>
 </footer>
-{%endmacro footer%}
+{%endmacro footer%} 
+
+
+
+{% macro navbar()%}
+  <div class="navbar-left title">
+    <a href="{{ config.base_url | safe }}" class="navbar-item">
+      {{ config.title }}
+    </a>
+  </div>
+
+  <div class="navbar-right">
+    {% for item in config.extra.blog_menu %}
+        <a href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}" class="navbar-item">
+          {{ item.name }}</a>
+    {% endfor %}
+  </div>
+{%endmacro navbar%}

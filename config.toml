@@ -36,11 +36,9 @@ external_links_no_referrer = true
 # Put all your custom variables here
 author= "Rajiv Harlalka"
 blog_menu = [
-    {url = "$BASE_URL", name = "Home"},
-    {url = "$BASE_URL/blog", name = "Posts"},
     {url = "$BASE_URL/about", name = "About Me"},
+    {url = "$BASE_URL/projects", name = "Projects"},
     {url = "$BASE_URL/categories", name = "Categories"},
-    {url = "$BASE_URL/Resume.pdf", name = "Resume"},
 ]
 github = "https://github.com/rajivharlalka"
 twitter = "https://twitter.com/rajivharlalka09"

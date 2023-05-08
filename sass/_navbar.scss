@@ -1,0 +1,22 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3vh;
+  font-weight: bold;
+
+  .title{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  a {
+    text-decoration: none;
+    margin: 0 0.5rem;
+  }
+
+  .navbar-right > a:hover {
+    opacity: 0.8;
+  }
+}

@@ -73,9 +73,10 @@
               
         </nav>
       </div> #}
-
-      
-      <div class="containe">
+      <div class="navbar">
+        {{page_macros::navbar()}}
+      </div>
+      <div>
         {% block content %} {% endblock %}
       </div>
       <div>
