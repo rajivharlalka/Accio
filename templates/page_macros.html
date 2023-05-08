@@ -4,9 +4,9 @@
     <script>
       document.write(new Date().getFullYear())
     </script>
-    {#
-    <script src="/footer.js"></script>
-    #}
+
+    <script src="/main.js"></script>
+  
   </div>
 </footer>
 {%endmacro footer%} 
@@ -14,16 +14,31 @@
 
 
 {% macro navbar()%}
-  <div class="navbar-left title">
-    <a href="{{ config.base_url | safe }}" class="navbar-item">
-      {{ config.title }}
-    </a>
-  </div>
+<header>
+  <nav class="navbar">
+    <button class="navbar-toggler" type="button" id="navbarNavBtn">
+      <span class="navbar-toggler-line"></span>
+      <span class="navbar-toggler-line"></span>
+      <span class="navbar-toggler-line"></span>
+    </button>
+    <div class="navbar-left">
+      <a href="{{ config.base_url | safe }}" class="navbar-title">
+          {{ config.title }}
+      </a>
+    </div>
 
-  <div class="navbar-right">
-    {% for item in config.extra.blog_menu %}
-        <a href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}" class="navbar-item">
-          {{ item.name }}</a>
-    {% endfor %}
-  </div>
+
+    <div class="navbar-right collapse navbar-collapse"  id="navbarNav">
+      <ul class="navbar-nav">
+        {% for item in config.extra.blog_menu %}
+        <li class="nav-item nav-link">
+           <a href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}" class="navbar-item">
+            {{ item.name }}</a>
+        {% endfor %}
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
 {%endmacro navbar%}

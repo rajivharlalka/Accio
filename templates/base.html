@@ -44,43 +44,41 @@
         </label>
         <nav class="nav">
           {% for item in config.extra.blog_menu %}
-           {% if item.name == "Resume"%}
+          {% if item.name == "Resume"%}
             <a class="nav-item" href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}" target="_blank" rel="noopener">
               {{ item.name }}
             </a>
-           {% else%}  
+            {% else%}  
             <a class="nav-item" href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}" >
               {{ item.name }}
             </a>
-           {%endif%}
+            {%endif%}
           {% endfor %}
             
         
         </nav>
         <nav class="nav-desktop">
           {% for item in config.extra.blog_menu %}
-            {% if item.name == "Resume"%}
-              <a class="nav-item-desktop" href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}"  target="_blank" rel="noopener" >
+          {% if item.name == "Resume"%}
+          <a class="nav-item-desktop" href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}"  target="_blank" rel="noopener" >
                 {{ item.name }}
               </a>
-            {% else%}  
+              {% else%}  
             <a class="nav-item-desktop" href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}" >
               {{ item.name }}
             </a>
             {%endif%}
-          {% endfor %}
+            {% endfor %}
+            
+            
+          </nav>
+        </div> #}
+      {{page_macros::navbar()}}
+      <div class="content">
+          {% block content %} {% endblock %}
           
-              
-        </nav>
-      </div> #}
-      <div class="navbar">
-        {{page_macros::navbar()}}
-      </div>
-      <div>
-        {% block content %} {% endblock %}
-      </div>
-      <div>
-        {{page_macros::footer()}}
+          {{page_macros::footer()}}
+        </div>
       </div>
     </div>
   </body>
