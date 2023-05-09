@@ -1,26 +1,3 @@
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-}
-
-body {
-  color: $blog-color;
-  background-color: $background_color;
-  font-family: $blog-font;
-  min-height: 100vh;
-}
-
-.container {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-
-
-
 .blog-list {
   font-size: 1.15rem;
   line-height: 1.5rem;

@@ -1,56 +1,79 @@
-footer {
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
   color: $blog-color;
+  background-color: $background_color;
+  font-family: $blog-font;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content {
+  padding: 10px;
+}
+
+footer {
   text-align: center;
   opacity: 0.75;
   // position: fixed;
   // bottom: 0;
-  width: 100%;
+  margin: 10px;
+  padding: 10px;
 }
+// .nav-desktop {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   min-height: 5rem;
+//   font-size: 1.2rem;
 
-.nav-desktop {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 5rem;
-  font-size: 1.2rem;
+//   @include sm {
+//     display: none;
+//   }
+// }
 
-  @include sm {
-    display: none;
-  }
-}
+// .nav-item-desktop {
+//   transition: all 0.3s;
+//   border-radius: 50%;
+//   letter-spacing: 1px;
+// }
 
-.nav-item-desktop {
-  transition: all 0.3s;
-  border-radius: 50%;
-  letter-spacing: 1px;
-}
+// .index-heading {
+//   width: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
 
-.index-heading {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+//   .index-title {
+//     font-size: 2.8rem;
+//     letter-spacing: 2px;
+//     // color: $link-color;
+//   }
 
-  .index-title {
-    font-size: 2.8rem;
-    letter-spacing: 2px;
-    // color: $link-color;
-  }
+//   .index-subtitle {
+//     font-size: 1.2rem;
+//   }
+// }
 
-  .index-subtitle {
-    font-size: 1.2rem;
-  }
-}
-
-::-webkit-scrollbar {
-  width: 6px;
-}
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-::-webkit-scrollbar-thumb {
-  background-color: rgba(155, 155, 155, 0.5);
-  border-radius: 20px;
-  border: transparent;
-}
+// ::-webkit-scrollbar {
+//   width: 6px;
+// }
+// ::-webkit-scrollbar-track {
+//   background: transparent;
+// }
+// ::-webkit-scrollbar-thumb {
+//   background-color: rgba(155, 155, 155, 0.5);
+//   border-radius: 20px;
+//   border: transparent;
+// }
