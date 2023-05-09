@@ -1,38 +1,25 @@
 html {
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 body {
   color: $blog-color;
   background-color: $background_color;
   font-family: $blog-font;
+  min-height: 100vh;
 }
 
 .container {
-  width: $body-width;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0 auto;
 }
 
-.about {
-  font-size: 1.6rem;
-  .post-title {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2em;
-  }
-  .post-content {
-    position: relative;
-    font-size: 0.8em;
-    line-height: 1.7em;
-    outline: 3px solid #64ffda;
-    padding: 1em 2em;
-    border-radius: 1em;
-  }
-}
+
+
 
 .blog-list {
   font-size: 1.15rem;
@@ -66,28 +53,28 @@ body {
   }
 }
 
-@include max-screen() {
-  body {
-    border-top: 0;
-  }
-
-  .container {
-    width: 100%;
-  }
-  .about {
-    font-size: 1.2rem;
-    padding: 0 1em;
-    .post-content {
-      font-size: 0.7em;
-      line-height: 1.7em;
-      padding: 0.8em 1.3em;
-    }
-    .emoji {
-      left: 11ch;
-      top: 1.7em;
-    }
-  }
-}
+// @include max-screen() {
+//   body {
+//     border-top: 0;
+//   }
+  
+//   .container {
+//     width: 100%;
+//   }
+//   .about {
+//     font-size: 1.2rem;
+//     padding: 0 1em;
+//     .post-content {
+//       font-size: 0.7em;
+//       line-height: 1.7em;
+//       padding: 0.8em 1.3em;
+//     }
+//     .emoji {
+//       left: 11ch;
+//       top: 1.7em;
+//     }
+//   }
+// }
 
 a {
   color: $blog-color;
@@ -131,7 +118,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-
+  
   .error-heading {
     font-size: 2rem;
   }
@@ -142,7 +129,7 @@ a {
   font-weight: 400;
   font-size: 1.15rem;
   color: $blog-color;
-
+  
   & h1,
   h2,
   h3,
@@ -159,12 +146,12 @@ a {
     border-radius: 12px;
     padding: 1rem;
   }
-
+  
   pre {
     overflow: auto;
     // font-family: $code-font-family;
   }
-
+  
   pre > code {
     display: block;
     overflow: auto;
@@ -174,7 +161,7 @@ a {
     background: none;
     color: $blog-color;
   }
-
+  
   code,
   kbd {
     font-family: $monospace-font;
@@ -198,7 +185,7 @@ a {
     font-size: 1rem;
     background-color: $background_color_secondary;
     border-radius: 1rem;
-
+    
     p {
       margin: 0;
     }
@@ -216,13 +203,13 @@ a {
       border: 1px solid $blog-color;
       padding: 0.6rem;
     }
-
+    
     /* Style for the table cells */
     td {
       border: 1px solid $blog-color;
       padding: 0.6rem;
     }
-
+    
     /* Hover effect for the table rows */
     tr:hover :not(th) {
       background-color: $background_color_secondary;
@@ -241,3 +228,20 @@ a {
     border-radius: 0.2rem;
   }
 }
+
+// .about {
+//   font-size: 1.6rem;
+//   .post-title {
+//     display: flex;
+//     justify-content: center;
+//     margin-bottom: 2em;
+//   }
+//   .post-content {
+//     position: relative;
+//     font-size: 0.8em;
+//     line-height: 1.7em;
+//     outline: 3px solid #64ffda;
+//     padding: 1em 2em;
+//     border-radius: 1em;
+//   }
+// }

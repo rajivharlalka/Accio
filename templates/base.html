@@ -64,7 +64,7 @@
                 {{ item.name }}
               </a>
               {% else%}  
-            <a class="nav-item-desktop" href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}" >
+              <a class="nav-item-desktop" href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}" >
               {{ item.name }}
             </a>
             {%endif%}
@@ -77,8 +77,8 @@
       <div class="content">
           {% block content %} {% endblock %}
           
-          {{page_macros::footer()}}
         </div>
+      {{page_macros::footer()}}
       </div>
     </div>
   </body>
