@@ -28,17 +28,28 @@
     </div>
 
 
-    <div class="navbar-right collapse navbar-collapse"  id="navbarNav">
+    <div class="navbar-right">
       <ul class="navbar-nav">
         {% for item in config.extra.blog_menu %}
         <li class="nav-item nav-link">
            <a href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}" class="navbar-item">
-            {{ item.name }}</a>
-        {% endfor %}
+            {{ item.name }}
+          </a>
         </li>
+        {% endfor %}
       </ul>
     </div>
   </nav>
 </header>
-
+<div class="collapse navbar-collapse"  id="navbarNav">
+  <ul class="navbar-nav">
+    {% for item in config.extra.blog_menu %}
+    <li class="nav-item nav-link">
+      <a href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}" class="navbar-item">
+        {{ item.name }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
 {%endmacro navbar%}
