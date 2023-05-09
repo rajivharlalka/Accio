@@ -25,11 +25,16 @@ body {
 footer {
   text-align: center;
   opacity: 0.75;
-  // position: fixed;
-  // bottom: 0;
   margin: 10px;
   padding: 10px;
 }
+
+a {
+  color: $blog-color;
+  text-decoration: none;
+}
+
+
 // .nav-desktop {
 //   display: flex;
 //   justify-content: space-between;
@@ -66,14 +71,14 @@ footer {
 //   }
 // }
 
-// ::-webkit-scrollbar {
-//   width: 6px;
-// }
-// ::-webkit-scrollbar-track {
-//   background: transparent;
-// }
-// ::-webkit-scrollbar-thumb {
-//   background-color: rgba(155, 155, 155, 0.5);
-//   border-radius: 20px;
-//   border: transparent;
-// }
+::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.5);
+  border-radius: 20px;
+  border: transparent;
+}

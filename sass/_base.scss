@@ -1,5 +1,5 @@
 .blog-list {
-  font-size: 1.15rem;
+  // font-size: 1.15rem;
   line-height: 1.5rem;
   li {
     list-style: none;
@@ -34,7 +34,7 @@
 //   body {
 //     border-top: 0;
 //   }
-  
+
 //   .container {
 //     width: 100%;
 //   }
@@ -52,11 +52,6 @@
 //     }
 //   }
 // }
-
-a {
-  color: $blog-color;
-  text-decoration: none;
-}
 
 .taxonomies {
   text-align: center;
@@ -95,25 +90,22 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  
+
   .error-heading {
     font-size: 2rem;
   }
 }
 
 .blog-page {
-  line-height: 1.75rem;
+  line-height: 1.5rem;
   font-weight: 400;
-  font-size: 1.15rem;
-  color: $blog-color;
-  
+
   & h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    line-height: 1.2rem;
     font-weight: 800;
     color: $secondary-color;
   }
@@ -123,26 +115,22 @@ a {
     border-radius: 12px;
     padding: 1rem;
   }
-  
+
   pre {
     overflow: auto;
-    // font-family: $code-font-family;
+    code {
+      display: block;
+      overflow: auto;
+      padding: 0.25rem;
+      // font-size: 1rem;
+      background: none;
+      color: $blog-color;
+    }
   }
-  
-  pre > code {
-    display: block;
-    overflow: auto;
-    // border: none;
-    padding: 0.25rem;
-    font-size: 1rem;
-    background: none;
-    color: $blog-color;
-  }
-  
+
   code,
   kbd {
     font-family: $monospace-font;
-    // font-size: 1.15rem;
     border-radius: 0.5rem;
     color: $highlight-color;
     padding: 0.25rem 0.25rem;
@@ -162,7 +150,7 @@ a {
     font-size: 1rem;
     background-color: $background_color_secondary;
     border-radius: 1rem;
-    
+
     p {
       margin: 0;
     }
@@ -180,13 +168,13 @@ a {
       border: 1px solid $blog-color;
       padding: 0.6rem;
     }
-    
+
     /* Style for the table cells */
     td {
       border: 1px solid $blog-color;
       padding: 0.6rem;
     }
-    
+
     /* Hover effect for the table rows */
     tr:hover :not(th) {
       background-color: $background_color_secondary;
@@ -199,9 +187,9 @@ a {
   }
 
   mark {
-    background-color: rgb(230, 230, 104); /* set the background color to your preference */
-    padding: 0.2rem; /* adjust the padding to your preference */
-    font-weight: bold; /* adjust the font weight to your preference */
+    background-color: rgb(230, 230, 104); 
+    padding: 0.2rem; 
+    font-weight: bold; 
     border-radius: 0.2rem;
   }
 }
