@@ -15,11 +15,13 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  // justify-content: space-between
+  justify-content: space-between
 }
 
 .content {
   padding: 10px;
+  flex-grow: 1;
+  margin-bottom: 10vh;
 }
 
 footer {

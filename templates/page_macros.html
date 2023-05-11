@@ -27,7 +27,7 @@
       <ul class="navbar-nav">
         {% for item in config.extra.blog_menu %}
         <li class="nav-item nav-link">
-           <a href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}" class="navbar-item">
+           <a href="{{ item.url | replace(from='$BASE_URL', to=config.base_url) }}" class="navbar-item">
             {{ item.name }}
           </a>
         </li>
@@ -43,7 +43,7 @@
   <ul class="navbar-nav">
     {% for item in config.extra.blog_menu %}
     <li class="nav-item nav-link">
-      <a href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}" class="navbar-item">
+       <a href="{{ item.url | replace(from='$BASE_URL', to=config.base_url) }}" class="navbar-item">
         {{ item.name }}
       </a>
     </li>

@@ -27,11 +27,40 @@
 }
 
 .navbar-mobile {
+  flex:1;
   display: flex;
-  flex-direction: row;
-  position:fixed;
+  // flex-direction: row;
+  align-items: center;
+  position: fixed;
   bottom: 0;
   height: 10vh;
-  width: 100%;
+  width: 100vw;
+  font-weight: bold;
+  font-size: 1.2rem;
+  // opacity: 0.5;
+  backdrop-filter: blur(4px);
+  ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    list-style-type: none;
+    justify-content: space-around;
+    display: flex;
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: transparent;
+      a {
+        padding: 2px;
+        text-align: center;
+        // filter: invert(1);
+        // mix-blend-mode: difference;
+      }
+
+    }
+  }
   // margin: 0 0.5rem;
 }
