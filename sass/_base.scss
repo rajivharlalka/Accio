@@ -1,6 +1,6 @@
 .blog-list {
-  // font-size: 1.15rem;
-  line-height: 1.5rem;
+  flex-grow: 1;
+  // line-height: 1.5rem;
   li {
     list-style: none;
     padding: 0;
@@ -9,21 +9,24 @@
     padding: 0;
   }
   .title {
-    flex: 5;
+    flex: 7;
   }
   .heading {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     font-weight: 400;
+    text-align: center;
   }
   .date {
     opacity: 0.9;
     color: $secondary-color;
-    flex: 2.5;
+    flex: 3;
     text-align: center;
   }
+
   .wc {
+    display: none;
     flex: 2.5;
     color: $blog-color;
     opacity: 0.6;

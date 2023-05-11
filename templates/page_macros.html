@@ -16,11 +16,6 @@
 {% macro navbar()%}
 <header>
   <nav class="navbar">
-    <button class="navbar-toggler" type="button" id="navbarNavBtn">
-      <span class="navbar-toggler-line"></span>
-      <span class="navbar-toggler-line"></span>
-      <span class="navbar-toggler-line"></span>
-    </button>
     <div class="navbar-left">
       <a href="{{ config.base_url | safe }}" class="navbar-title">
           {{ config.title }}
@@ -41,7 +36,10 @@
     </div>
   </nav>
 </header>
-<div class="collapse navbar-collapse"  id="navbarNav">
+{%endmacro navbar%}
+
+{% macro navbar_mobile()%}
+<div class="navbar-mobile">
   <ul class="navbar-nav">
     {% for item in config.extra.blog_menu %}
     <li class="nav-item nav-link">
@@ -52,4 +50,4 @@
     {% endfor %}
   </ul>
 </div>
-{%endmacro navbar%}
+{%endmacro navbar_mobile%}

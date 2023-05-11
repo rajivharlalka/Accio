@@ -24,56 +24,14 @@
   .navbar-right {
     display: none;
   }
-
-  .navbar-toggler {
-    padding: 0.5rem 0.5rem;
-    background-color: $background-color;
-    border: none;
-
-    &-line {
-      width: 35px;
-      height: 4px;
-      background-color: $blog-color;
-      border-radius: 10px;
-      display: block;
-      &:nth-child(2) {
-        margin: 0.4rem 0;
-      }
-    }
-  }
 }
 
-.open {
-  transform: translateX(25vw);
-  transition: right 0.5s ease;
-  
-}
-
-.collapse.navbar-collapse {
-  position: fixed;
-  right: 200%;
-  width: 25vw;
-  background-color: $background-color-secondary;
-  height: 100vh;
-  .navbar-nav {
-    margin: 0;
-    padding: 0;
-    align-content: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    .nav {
-      &-item {
-        text-align: center;
-        margin: 1rem 0;
-        list-style: none;
-      }
-    }
-  }
-  transition: right 0.5s ease;
-}
-
-.navbar-collapse.open {
-  right: 125vw;
+.navbar-mobile {
+  display: flex;
+  flex-direction: row;
+  position:fixed;
+  bottom: 0;
+  height: 10vh;
+  width: 100%;
+  // margin: 0 0.5rem;
 }

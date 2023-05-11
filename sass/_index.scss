@@ -15,7 +15,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  // justify-content: space-between
 }
 
 .content {
@@ -23,6 +23,7 @@ body {
 }
 
 footer {
+  display: none;
   text-align: center;
   opacity: 0.75;
   margin: 10px;
