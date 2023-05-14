@@ -4,14 +4,16 @@
     <div class="meta">
       <div class="date">{{ page.date }}</div>
       <div class="tags">
-        {% for category in page.taxonomies.categories%}
-        <a href="/" class="tag"> {{category}} </a>
+        {% for taxonomy in page.taxonomies.categories%}
+        <a href="{{get_taxonomy_url(kind='categories',name=taxonomy) | safe }}" class="tag">
+          {{taxonomy}}
+        </a>
         {% endfor %}
       </div>
     </div>
     <div class="title">{{ page.title }}</div>
     <div class="description">{{ page.description }}</div>
   </div>
-  <div class="content">{{ page.content | safe }}</div>
+  <div class="content">{{ page.content| safe  }}</div>
 </article>
 {% endblock content %}

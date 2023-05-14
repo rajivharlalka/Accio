@@ -43,11 +43,11 @@ blog_menu = [
 github = "https://github.com/rajivharlalka"
 twitter = "https://twitter.com/rajivharlalka09"
 
-[collections]
-  [collections.all]
-  [collections.all.posts]
-    template = "index.html"
-    sort_by = "date"
-    order = "desc"
-    paginate_by = 5
-    permalink = "/posts/:year/:month/:day/:slug/"
+# [collections]
+#   [collections.all]
+#   [collections.all.posts]
+#     template = "index.html"
+#     sort_by = "date"
+#     order = "desc"
+#     paginate_by = 5
+#     permalink = "/posts/:year/:month/:day/:slug/"
