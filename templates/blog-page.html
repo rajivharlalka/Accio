@@ -2,7 +2,11 @@
 <article class="blog-page">
   <div class="header">
     <div class="meta">
+      {% if page.date %}
       <div class="date">{{ page.date }}</div>
+      {% endif %}
+
+      {% if page.taxonomies %}
       <div class="tags">
         {% for taxonomy in page.taxonomies.categories%}
         <a href="{{get_taxonomy_url(kind='categories',name=taxonomy) | safe }}" class="tag">
@@ -10,6 +14,7 @@
         </a>
         {% endfor %}
       </div>
+      {% endif %}
     </div>
     <div class="title">{{ page.title }}</div>
     <div class="description">{{ page.description }}</div>
