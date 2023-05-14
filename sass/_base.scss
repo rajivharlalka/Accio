@@ -1,6 +1,5 @@
 .blog-list {
   flex-grow: 1;
-  // line-height: 1.5rem;
   li {
     list-style: none;
     padding: 0;
@@ -16,7 +15,6 @@
     align-items: center;
     justify-content: space-evenly;
     font-weight: 400;
-    // text-align: center;
   }
   .date {
     opacity: 0.9;
@@ -26,35 +24,11 @@
   }
 
   .wc {
-    // display: none;
     flex: 2.5;
     color: $blog-color;
     opacity: 0.6;
   }
 }
-
-// @include max-screen() {
-//   body {
-//     border-top: 0;
-//   }
-
-//   .container {
-//     width: 100%;
-//   }
-//   .about {
-//     font-size: 1.2rem;
-//     padding: 0 1em;
-//     .post-content {
-//       font-size: 0.7em;
-//       line-height: 1.7em;
-//       padding: 0.8em 1.3em;
-//     }
-//     .emoji {
-//       left: 11ch;
-//       top: 1.7em;
-//     }
-//   }
-// }
 
 .taxonomies {
   text-align: center;
@@ -79,7 +53,6 @@
 .taxonomies_item {
   background: rgba(230, 238, 236, 0.03);
   border-radius: 5px;
-  // margin: 0 10px;
   display: inline-block;
   min-width: 100px;
   margin: 1rem 1rem 0 0;
@@ -100,9 +73,44 @@
 }
 
 .blog-page {
-  line-height: 1.5rem;
   font-weight: 400;
+  .header {
+    border-bottom: 0.1rem dashed $blog-color;
+    padding-bottom: 0.5rem;
+    .meta {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0.5rem;
+      .date {
+        opacity: 0.9;
+        margin: 0 0.5rem;
+        border: {
+          right: 0.1rem solid $blog-color;
+        }
+        padding: 0 0.5rem;
+      }
+      .tags > .tag {
+        background-color: $background_color_secondary;
+        margin: 0 0.1rem;
+        padding: 0 0.1rem;
+        border-radius: 0.2rem;
+      }
+    }
 
+    > .title {
+      padding: 0;
+      color: $secondary-color;
+      font-weight: 800;
+      font-size: 1.75rem;
+      margin: 0.5rem 0;
+      text-align: center;
+    }
+
+    > .description {
+      text-align: center;
+      opacity: 0.75;
+    }
+  }
   & h1,
   h2,
   h3,
@@ -125,7 +133,6 @@
       display: block;
       overflow: auto;
       padding: 0.25rem;
-      // font-size: 1rem;
       background: none;
       color: $blog-color;
     }
@@ -163,7 +170,6 @@
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
-    // background-color: $background_color_secondary;
     border: 1px solid $blog-color;
 
     th {
@@ -172,13 +178,11 @@
       padding: 0.6rem;
     }
 
-    /* Style for the table cells */
     td {
       border: 1px solid $blog-color;
       padding: 0.6rem;
     }
 
-    /* Hover effect for the table rows */
     tr:hover :not(th) {
       background-color: $background_color_secondary;
     }
@@ -190,26 +194,9 @@
   }
 
   mark {
-    background-color: rgb(230, 230, 104); 
-    padding: 0.2rem; 
-    font-weight: bold; 
+    background-color: rgb(230, 230, 104);
+    padding: 0.2rem;
+    font-weight: bold;
     border-radius: 0.2rem;
   }
 }
-
-// .about {
-//   font-size: 1.6rem;
-//   .post-title {
-//     display: flex;
-//     justify-content: center;
-//     margin-bottom: 2em;
-//   }
-//   .post-content {
-//     position: relative;
-//     font-size: 0.8em;
-//     line-height: 1.7em;
-//     outline: 3px solid #64ffda;
-//     padding: 1em 2em;
-//     border-radius: 1em;
-//   }
-// }

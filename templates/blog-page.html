@@ -1,8 +1,17 @@
 {% extends "base.html" %} {% block content %}
-<div class="blog-page">
-  <div class="background"></div>
-  <h1 class="title">{{ page.title }}</h1>
-  <p class="subtitle"><strong>{{ page.date }}</strong></p>
-  {{ page.content | safe }}
-</div>
+<article class="blog-page">
+  <div class="header">
+    <div class="meta">
+      <div class="date">{{ page.date }}</div>
+      <div class="tags">
+        {% for category in page.taxonomies.categories%}
+        <a href="/" class="tag"> {{category}} </a>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="title">{{ page.title }}</div>
+    <div class="description">{{ page.description }}</div>
+  </div>
+  <div class="content">{{ page.content | safe }}</div>
+</article>
 {% endblock content %}
