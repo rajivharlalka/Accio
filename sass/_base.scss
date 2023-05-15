@@ -30,37 +30,6 @@
   }
 }
 
-.taxonomies {
-  text-align: center;
-  margin-bottom: 150px;
-}
-
-.taxonomies__title {
-  font-size: 2rem;
-  font-weight: bolder;
-  margin-bottom: 0.5em;
-}
-
-.count {
-  color: $blog-color;
-  font-weight: 700;
-  font-size: 1.2rem;
-}
-.taxonomies__items {
-  padding-top: 11px;
-}
-
-.taxonomies_item {
-  background: rgba(230, 238, 236, 0.03);
-  border-radius: 5px;
-  display: inline-block;
-  min-width: 100px;
-  margin: 1rem 1rem 0 0;
-  padding: 0.8rem 1.2rem;
-  font-size: 1.1rem;
-  word-spacing: 3px;
-}
-
 .error {
   display: flex;
   flex-direction: column;

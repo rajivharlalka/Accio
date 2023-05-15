@@ -3,7 +3,7 @@ title = "Markdown Syntax"
 date =  2021-10-25
 description = "Hello jsidnshdbcsh csnhcbdh escndbchsb csnifcsbc sufc isni si fei sc suuhfius nc"
 [taxonomies] 
-categories= ["Markdown", "Sample"]
+categories= ["Markdown", "Sample","hello", "neow","catsu"]
 +++
 
 This article offers a sample of basic Markdown syntax that can be used in Zola
@@ -89,7 +89,8 @@ out-of-the-box.
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Example HTML5 Document</title>dhshcbdhcbscjhbdjbcsbedhbsjhdbjshbjhcedbhc
+    <title>Example HTML5 Document</title>
+    dhshcbdhcbscjhbdjbcsbedhbsjhdbjshbjhcedbhc
   </head>
   <body>
     <p>Test</p>
@@ -100,16 +101,16 @@ out-of-the-box.
 #### Code block indented with four spaces
 
 ```html
-    <!doctype html>
-    <html lang="en">
-    <head>
-      <meta charset="utf-8">
-      <title>Example HTML5 Document</title>
-    </head>
-    <body>
-      <p>Test</p>
-    </body>
-    </html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Example HTML5 Document</title>
+  </head>
+  <body>
+    <p>Test</p>
+  </body>
+</html>
 ```
 
 ## List Types
