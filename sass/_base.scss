@@ -8,7 +8,8 @@
     padding: 0;
   }
   .title {
-    flex: 7;
+    flex: 40;
+    padding: 0 0.2rem;
   }
   .heading {
     display: flex;
@@ -17,14 +18,14 @@
     font-weight: 400;
   }
   .date {
-    opacity: 0.9;
+    opacity: 0.8;
     color: $secondary-color;
-    flex: 3;
+    flex: 30;
     text-align: center;
   }
 
   .wc {
-    flex: 2.5;
+    flex: 30;
     color: $blog-color;
     opacity: 0.6;
   }
