@@ -1,4 +1,8 @@
 .about {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  padding:10%;
   .title {
     font-size: 1.75rem;
     font-weight: 800;
