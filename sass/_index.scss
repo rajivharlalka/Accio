@@ -27,6 +27,10 @@ body {
       left:auto;
       right:auto;
     }
+
+    .content {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -38,6 +42,10 @@ footer {
   opacity: 0.75;
   margin: 10px;
   padding: 10px;
+
+  @include for-tablet-landscape-up{
+    display: block;
+  }
 }
 
 a {
