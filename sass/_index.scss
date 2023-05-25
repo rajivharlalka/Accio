@@ -54,13 +54,13 @@ a {
 }
 
 ::-webkit-scrollbar {
-  width: 2px;
+  width: 10px;
 }
 ::-webkit-scrollbar-track {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
   background-color: rgba(155, 155, 155, 0.5);
-  border-radius: 20px;
+  border-radius: 10px;
   border: transparent;
 }
