@@ -1,13 +1,14 @@
 {% macro footer() %}
 <footer>
-  <div>
+  <p>
     <script>
       document.write(new Date().getFullYear())
     </script>
-
-    <script src="/main.js"></script>
-  
-  </div>
+    | 
+    <a href="https://github.com/rajivharlalka/accio">Github</a> 
+    | 
+    <a href="/atom.xml">RSS</a>
+  </p>
 </footer>
 {%endmacro footer%} 
 
