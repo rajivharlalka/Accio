@@ -8,21 +8,29 @@ body {
   background-color: $background_color;
   font-family: $blog-font;
   min-height: 100vh;
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+  }
+  .content {
+    padding: 10px;
+    flex-grow: 1;
+    margin-bottom: 4rem;
+  }
+
+  @include for-tablet-landscape-up{
+    max-width: 800px;
+    margin: { 
+      left:auto;
+      right:auto;
+    }
+  }
 }
 
-.container {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between
-}
 
-.content {
-  padding: 10px;
-  flex-grow: 1;
-  margin-bottom: 4rem;
-}
 
 footer {
   display: none;
