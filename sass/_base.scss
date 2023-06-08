@@ -26,7 +26,7 @@
 
   .wc {
     flex: 30;
-    color: $blog-color;
+    color: $text_color;
     opacity: 0.6;
   }
 }
@@ -46,7 +46,7 @@
 .blog-page {
   font-weight: 400;
   .header {
-    border-bottom: 0.1rem dashed $blog-color;
+    border-bottom: 0.1rem dashed $text_color;
     padding-bottom: 0.5rem;
     .meta {
       display: flex;
@@ -56,7 +56,7 @@
         opacity: 0.9;
         margin: 0 0.5rem;
         border: {
-          right: 0.1rem solid $blog-color;
+          right: 0.1rem solid $text_color;
         }
         padding: 0 0.5rem;
       }
@@ -116,7 +116,7 @@
         overflow: auto;
         padding: 0.25rem;
         background: none;
-        color: $blog-color;
+        color: $text_color;
       }
     }
 
@@ -153,16 +153,16 @@
       width: 100%;
       border-collapse: collapse;
       border-spacing: 0;
-      border: 1px solid $blog-color;
+      border: 1px solid $text_color;
 
       th {
         font-weight: bold;
-        border: 1px solid $blog-color;
+        border: 1px solid $text_color;
         padding: 0.6rem;
       }
 
       td {
-        border: 1px solid $blog-color;
+        border: 1px solid $text_color;
         padding: 0.6rem;
       }
 
