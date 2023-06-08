@@ -3,6 +3,7 @@
   position: static;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   margin: 15px 10px;
   font-weight: bold;
 
@@ -11,8 +12,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex:6;
-
     .navbar-title {
       color: $blog-color;
     }
@@ -31,7 +30,6 @@
 
     .navbar-right{
       display: flex;
-      flex:4;
       .navbar-nav{
         list-style: none;
         display: flex;
