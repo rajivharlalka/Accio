@@ -48,6 +48,7 @@
           y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
       })(window, document, "clarity", "script", "h9n7kgu881"); </script>
     {% endif %}
+
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -58,46 +59,13 @@
 
   <body>
     <div class="container">
-      {# <div class="header-wrapper">
-        <input id="toggle" type="checkbox">
-        <label class="toggle-container" for="toggle">
-          <span class="button button-toggle"></span>
-        </label>
-        <nav class="nav">
-          {% for item in config.extra.blog_menu %}
-          {% if item.name == "Resume"%}
-            <a class="nav-item" href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}" target="_blank" rel="noopener">
-              {{ item.name }}
-            </a>
-            {% else%}  
-            <a class="nav-item" href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}" >
-              {{ item.name }}
-            </a>
-            {%endif%}
-          {% endfor %}
-            
-        
-        </nav>
-        <nav class="nav-desktop">
-          {% for item in config.extra.blog_menu %}
-          {% if item.name == "Resume"%}
-          <a class="nav-item-desktop" href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}"  target="_blank" rel="noopener" >
-                {{ item.name }}
-              </a>
-              {% else%}  
-              <a class="nav-item-desktop" href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}" >
-              {{ item.name }}
-            </a>
-            {%endif%}
-            {% endfor %}
-            
-            
-          </nav>
-        </div> #}
-      {{page_macros::navbar()}}
-      <div class="content">
+
+      {{page_macros::navbar(config=config, section=section)}}
+
+        <div class="content">
           {% block content %} {% endblock %}
-      </div>
+        </div>
+
       {{page_macros::footer()}}
     </div>
     {{page_macros::navbar_mobile()}}
