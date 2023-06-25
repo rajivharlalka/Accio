@@ -52,3 +52,16 @@
   </ul>
 </div>
 {%endmacro navbar_mobile%}
+
+{% macro utterance(page,config) %}
+<h2>Comments</h2>
+{% if config.extra.utterance.repo %}
+<script src="https://utteranc.es/client.js"
+        repo="{{ config.extra.utterance.repo | safe}}"
+        issue-term="pathname"
+        theme="{{ config.extra.utterance.theme |safe}}"
+        crossorigin="anonymous"
+        async>
+</script>
+{% endif %}
+{%endmacro utterance%}

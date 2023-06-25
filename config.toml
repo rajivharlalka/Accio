@@ -32,6 +32,7 @@ external_links_no_follow = true
 # Whether to set rel="noreferrer" for all external links
 external_links_no_referrer = true
 
+
 [extra]
 # Put all your custom variables here
 author= "Rajiv Harlalka"
@@ -43,6 +44,10 @@ blog_menu = [
 ]
 github = "https://github.com/rajivharlalka"
 twitter = "https://twitter.com/rajivharlalka09"
+
+[extra.utterance]
+repo = "rajivharlalka/accio"
+theme = "photon-dark"
 
 # [collections]
 #   [collections.all]
